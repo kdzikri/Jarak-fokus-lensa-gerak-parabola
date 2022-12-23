@@ -1,0 +1,86 @@
+#cara menampilkan hasil
+
+m = 10
+print(m)
+print("hasil m+m = ", m+m)
+print("hasil m x m = ", m*m)
+
+#menampilkan karakter
+kar_1 = 'hello'
+kar_2 = 'world'
+kar_3 = 'lorem ipsum'
+print(kar_1+' '+kar_2+' '+kar_3)
+print(kar_1[2:10])
+karakter = 'hello world lorem ipsum'
+print(karakter.split())
+
+from math import sqrt
+from math import pi
+
+#operasi hitungan sederhana
+a = 25
+b = 25
+c = 2.5
+d = 25/5
+
+print(a+b)
+print("bentuk bilangan integer = ", int(b))
+print("bentuk bilangan float = ", float(a))
+print("perkalian c x d = ", c*d)
+print("-----------------------")
+print("contoh soal")
+print("Tentukan kecepatan (v) dengan usaha (w) = 35; jarak (s) = 25; waktu(t) = 5)")
+w = 35
+s = 25
+t = 5
+
+#v = s/t
+kecepatan = s/t
+print(kecepatan, "m/s")
+
+print("-----------------------")
+print("soal 1")
+print("Tentukan energi dalam J dari m = 9.31x10^-31; c = 3*10^8")
+m = 9.31*10**-31
+c = 3*10**8
+
+#energi
+E = m * c**2
+print(E)
+
+print("-----------------------")
+print("soal 2")
+print("Tentukan periode dalam s (l = 20 m ; g = 9.8 m/s^2)")
+l = 20
+g = 9.8
+
+#periode = 2 x pi x sqrt (l/g)
+periode = 2 * pi * sqrt (l/g)
+print (periode)
+
+from numpy import *
+#menampilkan matriks
+M = [[0 , 1 , 1 , 0]] , [[2,3,2,1]]
+print(M)
+
+a = zeros ((3,3), int)
+a[1,1] = 4
+a[2,0:2] = [4,4]
+print (a)
+
+from numpy import array
+print(' ')
+A = array([[2,3,4],[2,3,6]])
+print (A)
+
+import matplotlib.pyplot as plt
+from numpy import arange,sin,cos
+
+x = arange(0.0,6.0,0.1)
+plt.plot(x,sin(x),'o-',x,cos(x),'s-')
+plt.title('GRAFIK SINUSOIDAL')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend('sinus','cosinus',loc = 0)
+plt.grid(True)
+plt.show()
